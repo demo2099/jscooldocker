@@ -7,7 +7,7 @@ RUN set -ex \
         && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
         && echo "Asia/Shanghai" > /etc/timezone
 
-#RUN git clone https://github.com/demo2099/jscooldocker.git
+RUN git clone https://github.com/demo2099/jscooldocker.git
 RUN git clone https://github.com/demo2099/jscool.git  \
         && cd /jscool \
         && mkdir logs \
