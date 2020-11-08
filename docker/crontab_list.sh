@@ -2,7 +2,7 @@
 #0 */2 * * * git -C /jscooldocker/ pull >> /jscooldocker/logs/pull.log 2>&1
 # 每3天的23:50分清理一次日志
 50 23 */3 * * rm -rf /jscooldocker/logs/*.log
-2 */1 * * * crontab /jscool/lxk0301/docker/${CRONTAB_LIST_FILE}
+2 */1 * * * crontab /jscooldocker/docker/${CRONTAB_LIST_FILE}
 0 0-18/6,9 * * * node /jscool/lxk0301/jd_818.js >> /jscooldocker/logs/jd_818.log 2>&1
 0,10 0 * * * node /jscool/lxk0301/jd_xtg.js >> /jscooldocker/logs/jd_xtg.log 2>&1
 0 0,12,18 * * * node /jscool/lxk0301/jd_bean_sign.js >> /jscooldocker/logs/jd_bean_sign.log 2>&1
